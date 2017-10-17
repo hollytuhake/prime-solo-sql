@@ -26,5 +26,5 @@ INSERT INTO syntax_practice (username, city, transactions_completed,
 transactions_attempted, account_balance) VALUES ('holly', 'minneapolis', 12, 12, 348000);
 
 -- 9. Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
-DELETE FROM "syntax_practice" WHERE "city" = 'miami' OR "city" = 'phoenix';
+DELETE FROM "syntax_practice" WHERE "city" = 'miami' OR "city" = 'phoenix' AND "transactions_completed" < 5;
 
